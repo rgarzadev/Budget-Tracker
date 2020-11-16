@@ -132,6 +132,10 @@ function sendTransaction(isAdding) {
       // clear form
       nameEl.value = "";
       amountEl.value = "";
+
+      //check index database after every online transaction
+      checkDatabase();
+      
     }
   })
   .catch(err => {
